@@ -1,0 +1,40 @@
+{
+  "name": "checkpoint-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc -- --init",
+    "dev:1": "tsc-watch --noClear -p ./tsconfig.json --outDir ./dist --onSuccess \"node ./dist/index.js\"",
+    "dev:2": "nodemon ./dist/index.js",
+    "dev:3": "node --watch ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "Marcos Lambir Torres",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node18": "^1.0.3",
+    "@types/express": "^4.17.14",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.54.0",
+    "express-async-errors": "^3.1.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}
